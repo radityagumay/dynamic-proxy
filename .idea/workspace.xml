@@ -2,21 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6867982c-8b02-451f-b486-22becc8105c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/Scarlet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/proxy/Connection.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/proxy/Deserialization.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/proxy/Message.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/proxy/MessageAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/proxy/MessageAdapterResolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/proxy/Receive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/proxy/Send.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/proxy/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/META-INF/Proxy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proxy/META-INF/Proxy.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/MainKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/MyInvocationHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/ProxyFactory$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/ProxyFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/TaskImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proxy/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proxy/MyInvocationHandler.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proxy/ProxyFactory.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proxy/Task.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proxy/TaskImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/FlowStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/FlowStreamImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/RxJavaStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/RxJavaStreamImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/Scarlet$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proxy/proxy/Scarlet$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/Scarlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proxy/proxy/Scarlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/ScarletInvocationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/ScarletKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proxy/proxy/ScarletKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proxy/proxy/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/ServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/Stream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proxy/Scarlet.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/proxy/Scarlet.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +55,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="proxy" />
+    </key>
   </component>
   <component name="RunManager" selected="Kotlin.proxy.ScarletKt">
     <configuration name="proxy.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
@@ -114,46 +125,50 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="440" y="202" key="#Project_Structure/0.23.1680.1027@0.23.1680.1027" timestamp="1579771011388" />
-    <state x="627" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1579837058742">
+    <state x="627" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1579838641941">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="627" y="259" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1579837058742" />
+    <state x="627" y="259" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1579838641941" />
+    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579847400983">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1579847400983" />
     <state x="678" y="247" width="599" height="579" key="#xdebugger.evaluate" timestamp="1579832371122">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="678" y="247" width="599" height="579" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1579832371122" />
-    <state width="1638" height="272" key="GridCell.Tab.0.bottom" timestamp="1579837410861">
+    <state width="1638" height="561" key="GridCell.Tab.0.bottom" timestamp="1579848365862">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1579837410861" />
-    <state width="1638" height="272" key="GridCell.Tab.0.center" timestamp="1579837410860">
+    <state width="1638" height="561" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1579848365862" />
+    <state width="1638" height="561" key="GridCell.Tab.0.center" timestamp="1579848365860">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1579837410860" />
-    <state width="1638" height="272" key="GridCell.Tab.0.left" timestamp="1579837410859">
+    <state width="1638" height="561" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1579848365860" />
+    <state width="1638" height="561" key="GridCell.Tab.0.left" timestamp="1579848365860">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1579837410859" />
-    <state width="1638" height="272" key="GridCell.Tab.0.right" timestamp="1579837410860">
+    <state width="1638" height="561" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1579848365860" />
+    <state width="1638" height="561" key="GridCell.Tab.0.right" timestamp="1579848365861">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1579837410860" />
-    <state width="1638" height="424" key="GridCell.Tab.1.bottom" timestamp="1579832952778">
+    <state width="1638" height="561" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1579848365861" />
+    <state width="1638" height="424" key="GridCell.Tab.1.bottom" timestamp="1579847927746">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="424" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1579832952778" />
-    <state width="1638" height="424" key="GridCell.Tab.1.center" timestamp="1579832952777">
+    <state width="1638" height="424" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1579847927746" />
+    <state width="1638" height="424" key="GridCell.Tab.1.center" timestamp="1579847927745">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="424" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1579832952777" />
-    <state width="1638" height="424" key="GridCell.Tab.1.left" timestamp="1579832952777">
+    <state width="1638" height="424" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1579847927745" />
+    <state width="1638" height="424" key="GridCell.Tab.1.left" timestamp="1579847927744">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="424" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1579832952777" />
-    <state width="1638" height="424" key="GridCell.Tab.1.right" timestamp="1579832952778">
+    <state width="1638" height="424" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1579847927744" />
+    <state width="1638" height="424" key="GridCell.Tab.1.right" timestamp="1579847927745">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="424" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1579832952778" />
+    <state width="1638" height="424" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1579847927745" />
     <state x="505" y="248" key="run.anything.popup" timestamp="1579771021578">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -187,19 +202,29 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/proxy/Scarlet.kt</url>
-          <line>39</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/proxy/Connection.kt</url>
+          <line>7</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/proxy/Scarlet.kt</url>
-          <line>114</line>
-          <option name="timeStamp" value="25" />
+          <line>199</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/proxy/Connection.kt</url>
+          <line>12</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/proxy/Scarlet.kt</url>
-          <line>116</line>
-          <option name="timeStamp" value="26" />
+          <line>17</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/proxy/Scarlet.kt</url>
+          <line>122</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
