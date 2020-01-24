@@ -1,44 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6867982c-8b02-451f-b486-22becc8105c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/proxy/Connection.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/Deserialization.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/Message.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/MessageAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/MessageAdapterResolver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/Receive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/Send.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/proxy/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/FlowStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/FlowStreamImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/RxJavaStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/RxJavaStreamImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/Scarlet$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proxy/proxy/Scarlet$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/Scarlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proxy/proxy/Scarlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/ScarletInvocationHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/ScarletKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proxy/proxy/ScarletKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proxy/proxy/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/ServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proxy/proxy/Stream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proxy/Scarlet.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/proxy/Scarlet.kt" afterDir="false" />
-    </list>
+    <list default="true" id="6867982c-8b02-451f-b486-22becc8105c5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="JUnit4 Test Class" />
         <option value="Kotlin File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1Wn2MJswq1StBD91Sbrpb8EHXsf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -50,18 +47,69 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="proxy.adapter.model" />
+      <recent name="proxy.adapter" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="proxy" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="proxy" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Kotlin.proxy.ScarletKt">
+  <component name="RunManager" selected="Kotlin.proxy.MainKt (1)">
+    <configuration name="proxy.MainKt (1)" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Proxy.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="proxy.MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="proxy.MainKt (2)" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Proxy2.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="proxy.MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="proxy.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Proxy" />
       <option name="VM_PARAMETERS" />
@@ -88,8 +136,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="proxy.TestAnnotationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Proxy.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="proxy.TestAnnotationKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.proxy.MainKt (1)" />
+        <item itemvalue="Kotlin.proxy.TestAnnotationKt" />
+        <item itemvalue="Kotlin.proxy.MainKt (2)" />
         <item itemvalue="Kotlin.proxy.ScarletKt" />
         <item itemvalue="Kotlin.proxy.MainKt" />
       </list>
@@ -120,6 +184,19 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="440" y="202" key="#Project_Structure" timestamp="1579771011388">
       <screen x="0" y="23" width="1680" height="1027" />
@@ -133,42 +210,58 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1579847400983" />
-    <state x="678" y="247" width="599" height="579" key="#xdebugger.evaluate" timestamp="1579832371122">
+    <state x="614" y="196" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1579853404149">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="678" y="247" width="599" height="579" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1579832371122" />
-    <state width="1638" height="561" key="GridCell.Tab.0.bottom" timestamp="1579848365862">
+    <state x="614" y="196" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1579853404149" />
+    <state x="902" y="254" width="599" height="579" key="#xdebugger.evaluate" timestamp="1579859870076">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="561" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1579848365862" />
-    <state width="1638" height="561" key="GridCell.Tab.0.center" timestamp="1579848365860">
+    <state x="902" y="254" width="599" height="579" key="#xdebugger.evaluate/0.23.1680.1027@0.23.1680.1027" timestamp="1579859870076" />
+    <state width="1638" height="561" key="GridCell.Tab.0.bottom" timestamp="1579861717935">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="561" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1579848365860" />
-    <state width="1638" height="561" key="GridCell.Tab.0.left" timestamp="1579848365860">
+    <state width="1638" height="561" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1579861717935" />
+    <state width="1638" height="561" key="GridCell.Tab.0.center" timestamp="1579861717935">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="561" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1579848365860" />
-    <state width="1638" height="561" key="GridCell.Tab.0.right" timestamp="1579848365861">
+    <state width="1638" height="561" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1579861717935" />
+    <state width="1638" height="561" key="GridCell.Tab.0.left" timestamp="1579861717934">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="561" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1579848365861" />
-    <state width="1638" height="424" key="GridCell.Tab.1.bottom" timestamp="1579847927746">
+    <state width="1638" height="561" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1579861717934" />
+    <state width="1638" height="561" key="GridCell.Tab.0.right" timestamp="1579861717935">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="424" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1579847927746" />
-    <state width="1638" height="424" key="GridCell.Tab.1.center" timestamp="1579847927745">
+    <state width="1638" height="561" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1579861717935" />
+    <state width="1638" height="424" key="GridCell.Tab.1.bottom" timestamp="1579859871088">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="424" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1579847927745" />
-    <state width="1638" height="424" key="GridCell.Tab.1.left" timestamp="1579847927744">
+    <state width="1638" height="424" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1579859871088" />
+    <state width="1638" height="424" key="GridCell.Tab.1.center" timestamp="1579859871087">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="424" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1579847927744" />
-    <state width="1638" height="424" key="GridCell.Tab.1.right" timestamp="1579847927745">
+    <state width="1638" height="424" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1579859871087" />
+    <state width="1638" height="424" key="GridCell.Tab.1.left" timestamp="1579859871087">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="424" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1579847927745" />
+    <state width="1638" height="424" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1579859871087" />
+    <state width="1638" height="424" key="GridCell.Tab.1.right" timestamp="1579859871087">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="424" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1579859871087" />
+    <state x="552" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1579853708427">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="552" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1680.1027@0.23.1680.1027" timestamp="1579853708427" />
+    <state x="234" y="159" key="new project wizard" timestamp="1579860019475">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="234" y="159" key="new project wizard/0.23.1680.1027@0.23.1680.1027" timestamp="1579860019475" />
+    <state x="619" y="270" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1579853712967">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="619" y="270" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1579853712967" />
     <state x="505" y="248" key="run.anything.popup" timestamp="1579771021578">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -182,49 +275,82 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/proxy/MyInvocationHandler.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/MyInvocationHandler.kt</url>
           <line>16</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/proxy/MyInvocationHandler.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/MyInvocationHandler.kt</url>
           <line>17</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/proxy/MyInvocationHandler.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/MyInvocationHandler.kt</url>
           <line>19</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/proxy/MyInvocationHandler.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/MyInvocationHandler.kt</url>
           <line>21</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/proxy/Connection.kt</url>
-          <line>7</line>
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/Connection.kt</url>
+          <line>9</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/proxy/Scarlet.kt</url>
-          <line>199</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/proxy/Connection.kt</url>
-          <line>12</line>
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/Connection.kt</url>
+          <line>14</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/proxy/Scarlet.kt</url>
-          <line>17</line>
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/ServiceMethodExecutor.kt</url>
+          <line>34</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/proxy/Scarlet.kt</url>
-          <line>122</line>
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/ServiceMethodExecutor.kt</url>
+          <line>35</line>
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/ServiceMethodExecutor.kt</url>
+          <line>33</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/ServiceMethodExecutor.kt</url>
+          <line>27</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/ServiceMethodExecutor.kt</url>
+          <line>28</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/ServiceMethodExecutor.kt</url>
+          <line>41</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/ServiceMethodExecutor.kt</url>
+          <line>42</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/ServiceMethodExecutor.kt</url>
+          <line>43</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/proxy/ServiceMethodExecutor.kt</url>
+          <line>44</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -233,6 +359,7 @@
         <watch expression="any" language="kotlin" />
         <watch expression="messages" language="kotlin" />
         <watch expression="service.observeEvents()" language="kotlin" />
+        <watch expression="annotations" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>
