@@ -7,7 +7,6 @@ import java.util.*
 class MessageAdapterResolver(
     private val messageAdapterFactories: List<MessageAdapter.Factory>
 ) {
-
     private val messageAdapterCache = mutableMapOf<MessageAdapterKey, MessageAdapter<Any>>()
 
     fun resolve(type: Type, annotations: Array<Annotation>): MessageAdapter<Any> {

@@ -1,17 +1,22 @@
 package proxy
 
+import io.reactivex.BackpressureStrategy.LATEST
+import io.reactivex.Flowable
+import io.reactivex.Scheduler
+import io.reactivex.subjects.BehaviorSubject
+import io.reactivex.subjects.PublishSubject
 import proxy.adapter.model.Message
 
-class Connection {
+class Connection(
+    private val scheduler: Scheduler
+) {
+    private val subject = BehaviorSubject.create<Message>()
 
-    private val messages = mutableListOf<Message>()
-
-    fun send(message: Message): Boolean {
-        messages.add(message)
-        return true
+    fun send(message: Message) {
+        subject.onNext(message)
     }
 
-    fun observeEvents(): List<Message> {
-        return messages
+    fun observeEvents(): Flowable<Message> {
+        return subject.toFlowable(LATEST).hide()
     }
 }

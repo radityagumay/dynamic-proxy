@@ -1,9 +1,11 @@
 package proxy
 
+import io.reactivex.Flowable
+
 interface Task {
     @Send
     fun sendMessage(message: String)
 
     @Receive
-    fun observeEvents(): List<String>
+    fun observeEvents(): Flowable<String>
 }

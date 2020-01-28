@@ -1,6 +1,8 @@
 package proxy
 
+import io.reactivex.Scheduler
 import proxy.adapter.MessageAdapter
+import proxy.adapter.StreamAdapter
 import proxy.adapter.TextMessageAdapter
 import java.lang.reflect.Method
 import java.lang.reflect.ParameterizedType
@@ -41,16 +43,24 @@ sealed class ServiceMethod {
     }
 
     class Receive(
+        private val scheduler: Scheduler,
         private val connection: Connection,
-        private val messageFactory: TextMessageAdapter
+        private val textMessageAdapter: TextMessageAdapter,
+        private val streamAdapter: StreamAdapter<Any, Any>
     ) : ServiceMethod() {
         fun execute(): Any {
-            return connection.observeEvents().map { messageFactory.fromMessage(it) }
+            return connection.observeEvents()
+                .observeOn(scheduler)
+                .map {
+                    textMessageAdapter.fromMessage(it)
+                }
         }
 
         class Factory(
+            private val scheduler: Scheduler,
             private val conn: Connection,
-            private val textMessageAdapter: TextMessageAdapter
+            private val textMessageAdapter: TextMessageAdapter,
+            private val streamAdapterResolver: StreamAdapterResolver
         ) : ServiceMethod.Factory {
             override fun create(connection: Connection, method: Method): ServiceMethod {
                 method.requireParameterTypes { "Receive method must have zero parameter: $method" }
@@ -60,8 +70,12 @@ sealed class ServiceMethod {
                 method.requireReturnTypeIsResolvable {
                     "Method return type must not include a type variable or wildcard: ${method.genericReturnType}"
                 }
-                return Receive(conn, textMessageAdapter)
+                val streamAdapter = createStreamAdapter(method)
+                return Receive(scheduler, conn, textMessageAdapter, streamAdapter)
             }
+
+            private fun createStreamAdapter(method: Method): StreamAdapter<Any, Any> =
+                streamAdapterResolver.resolve(method.genericReturnType)
         }
     }
 

@@ -1,7 +1,9 @@
 package proxy
 
+import io.reactivex.schedulers.Schedulers
+import proxy.adapter.MessageAdapter
+import proxy.adapter.StreamAdapter
 import proxy.adapter.TextMessageAdapter
-import proxy.adapter.factory.BuiltInMessageAdapterFactory
 import java.lang.reflect.InvocationHandler
 import java.lang.reflect.Proxy
 
@@ -31,19 +33,29 @@ class Scarlet private constructor(
     }
 
     class Builder {
+        private val messageAdapterFactories = mutableListOf<MessageAdapter.Factory>()
+        private val streamAdapterFactories = mutableListOf<StreamAdapter.Factory>()
+
+        fun addMessageAdapterFactory(factory: MessageAdapter.Factory): Builder =
+            apply { messageAdapterFactories.add(factory) }
+
+        fun addStreamAdapterFactory(factory: StreamAdapter.Factory): Builder =
+            apply { streamAdapterFactories.add(factory) }
+
         fun build() = Scarlet(createServiceFactory())
 
         private fun createServiceFactory(): Service.Factory {
-            val connection = Connection()
+            val dafaultScheduler = Schedulers.computation()
+            val connection = Connection(dafaultScheduler)
             val textAdapter = TextMessageAdapter()
-            val messageFactory = BuiltInMessageAdapterFactory(textAdapter)
-            val messageAdapter = MessageAdapterResolver(listOf(messageFactory))
+            val messageAdapterResolver = MessageAdapterResolver(messageAdapterFactories)
+            val streamAdapterResolver = StreamAdapterResolver(streamAdapterFactories)
             return Service.Factory(
                 ServiceMethodExecutor.Factory(
                     RuntimePlatform.get(),
                     connection,
-                    ServiceMethod.Send.Factory(messageAdapter),
-                    ServiceMethod.Receive.Factory(connection, textAdapter)
+                    ServiceMethod.Send.Factory(messageAdapterResolver),
+                    ServiceMethod.Receive.Factory(dafaultScheduler, connection, textAdapter, streamAdapterResolver)
                 )
             )
         }
