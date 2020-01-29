@@ -49,13 +49,12 @@ class Scarlet private constructor(
             val connection = Connection(dafaultScheduler)
             val textAdapter = TextMessageAdapter()
             val messageAdapterResolver = MessageAdapterResolver(messageAdapterFactories)
-            val streamAdapterResolver = StreamAdapterResolver(streamAdapterFactories)
             return Service.Factory(
                 ServiceMethodExecutor.Factory(
                     RuntimePlatform.get(),
                     connection,
                     ServiceMethod.Send.Factory(messageAdapterResolver),
-                    ServiceMethod.Receive.Factory(dafaultScheduler, connection, textAdapter, streamAdapterResolver)
+                    ServiceMethod.Receive.Factory(dafaultScheduler, connection, textAdapter)
                 )
             )
         }

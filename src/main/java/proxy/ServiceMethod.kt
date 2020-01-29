@@ -2,7 +2,6 @@ package proxy
 
 import io.reactivex.Scheduler
 import proxy.adapter.MessageAdapter
-import proxy.adapter.StreamAdapter
 import proxy.adapter.TextMessageAdapter
 import java.lang.reflect.Method
 import java.lang.reflect.ParameterizedType
@@ -45,22 +44,20 @@ sealed class ServiceMethod {
     class Receive(
         private val scheduler: Scheduler,
         private val connection: Connection,
-        private val textMessageAdapter: TextMessageAdapter,
-        private val streamAdapter: StreamAdapter<Any, Any>
+        private val messageAdapter: TextMessageAdapter
     ) : ServiceMethod() {
         fun execute(): Any {
             return connection.observeEvents()
                 .observeOn(scheduler)
                 .map {
-                    textMessageAdapter.fromMessage(it)
+                    messageAdapter.fromMessage(it)
                 }
         }
 
         class Factory(
             private val scheduler: Scheduler,
             private val conn: Connection,
-            private val textMessageAdapter: TextMessageAdapter,
-            private val streamAdapterResolver: StreamAdapterResolver
+            private val textMessageAdapter: TextMessageAdapter
         ) : ServiceMethod.Factory {
             override fun create(connection: Connection, method: Method): ServiceMethod {
                 method.requireParameterTypes { "Receive method must have zero parameter: $method" }
@@ -70,12 +67,8 @@ sealed class ServiceMethod {
                 method.requireReturnTypeIsResolvable {
                     "Method return type must not include a type variable or wildcard: ${method.genericReturnType}"
                 }
-                val streamAdapter = createStreamAdapter(method)
-                return Receive(scheduler, conn, textMessageAdapter, streamAdapter)
+                return Receive(scheduler, conn, textMessageAdapter)
             }
-
-            private fun createStreamAdapter(method: Method): StreamAdapter<Any, Any> =
-                streamAdapterResolver.resolve(method.genericReturnType)
         }
     }
 
