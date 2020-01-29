@@ -4,7 +4,6 @@ import io.reactivex.BackpressureStrategy.LATEST
 import io.reactivex.Flowable
 import io.reactivex.Scheduler
 import io.reactivex.subjects.BehaviorSubject
-import io.reactivex.subjects.PublishSubject
 import proxy.adapter.model.Message
 
 class Connection(
@@ -17,6 +16,6 @@ class Connection(
     }
 
     fun observeEvents(): Flowable<Message> {
-        return subject.toFlowable(LATEST).hide()
+        return subject.toFlowable(LATEST).share().hide()
     }
 }

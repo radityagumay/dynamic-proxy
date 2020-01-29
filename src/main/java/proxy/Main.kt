@@ -2,6 +2,8 @@ package proxy
 
 import io.reactivex.Flowable
 import io.reactivex.Observable
+import io.reactivex.Scheduler
+import io.reactivex.schedulers.Schedulers
 import proxy.adapter.Stream
 import proxy.adapter.StreamAdapter
 import proxy.adapter.TextMessageAdapter
